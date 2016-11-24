@@ -1,0 +1,29 @@
+@import "constant";
+html,body{
+  height: 100%;
+}
+header{
+  background-color:$sub-color;
+}
+@mixin block{
+  width: 100%;
+  height: 800px;
+}
+.red{
+@include block ;
+  background-color: orangered;
+}
+.green{
+  @include block;
+  background-color: greenyellow;
+}
+.blue{
+  @include block;
+  background-color: aqua;
+}
+.content{
+  transition: background-color 1s ease-in 1s;
+}
+div[data-reactroot],div.app{
+  height: 100%;
+}
